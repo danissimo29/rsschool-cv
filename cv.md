@@ -12,14 +12,14 @@
 ---
 ##Code examples
 *Pushing custom even to Google Analytics through Google Optimize*
-`clickableElement.addEventListener('click', ()=>{
+```clickableElement.addEventListener('click', ()=>{
   //GTM
   window.dataLayer = window.dataLayer ||[]; dataLayer.push({
      "event": "GOEvent",                       
      "eventCategory":"Google Optimize Custom", 
   	"eventAction":"optimizeTest - 'calculate gas price' button click",           
     "eventLabel": pageTitle      
-  }) })`
+  }) })```
 ---
 ##Experience
 - Conversion Rate Optimisation consultant (1,5 years)
