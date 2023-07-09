@@ -48,7 +48,7 @@
     <!-- Main content -->
     <main class="main">
         <div class="container main-container">
-            <section class="section" id="hero">
+            <section class="section section-hero" id="hero">
                 <h1>CV Yakov Ratner</h1>
                 <img class="hero-image" src="./assets/img/my-photo-portrate.jpeg" alt="Portrate Yakov Ratner">
             </section>
@@ -106,14 +106,15 @@
                 <i>Pushing custom even to Google Analytics through Google Optimize</i>
                 <pre>
                    <code>
-                    clickableElement.addEventListener('click', ()=>{
-                        //GTM
-                        window.dataLayer = window.dataLayer ||[]; dataLayer.push({
-                           "event": "GOEvent",
-                           "eventCategory":"Google Optimize Custom",
-                            "eventAction":"optimizeTest - 'your event actiojn",
-                          "eventLabel": "your event label"
-                        }) })
+clickableElement.addEventListener('click', ()=>{
+    //GTM
+    window.dataLayer = window.dataLayer ||[];
+    dataLayer.push({
+        "event": "GOEvent",
+        "eventCategory":"Google Optimize Custom",
+        "eventAction":"optimizeTest - 'your event actiojn",
+        "eventLabel": "your event label"
+    }) })
                    </code>
                 </pre>
             </section>
@@ -136,9 +137,9 @@
             </section>
             <section class="section" id="contact">
                 <h2 class="section-title">Contact</h2>
-                <ul>
-                    <li>Phone number: +31626327034</li>
-                    <li>Email: yakau_ratner@outlook.com</li>
+                <ul class="list">
+                    <li class="list-item list-item-custom">Phone number: +31626327034</li>
+                    <li class="list-item list-item-custom">Email: yakau_ratner@outlook.com</li>
                 </ul>
             </section>
         </div>
