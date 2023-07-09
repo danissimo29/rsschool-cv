@@ -8,141 +8,152 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/my-photo-icon.ico">
+    <link rel="icon" href="./assets/icons/my-photo-icon.ico">
     <title>CV Yakov Ratner</title>
 </head>
 <body>
-    <div class="main-wrapper">
-        <!-- Header of the page -->
-        <header class="header">
-            <div class="container">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#summary" class="nav-link">Summary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience" class="nav-link">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#education" class="nav-link">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#languages" class="nav-link">Languages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#hobbies" class="nav-link">Hobbies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#code_examples" class="nav-link">Code examples</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+    <!-- Header of the page -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code_examples">Code examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main class="main">
+        <div class="container main-container">
+            <section class="section" id="hero">
+                <h1>CV Yakov Ratner</h1>
+                <img class="hero-image" src="./assets/img/my-photo-portrate.jpeg" alt="Portrate Yakov Ratner">
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>Hi, my name is Yakov. I am an aspiring digital professional with an experience in web experimentation and Conversion Rate Optimisation. I am aiming to bring my front-end skills to a new level and open the doors of possibilities.</p>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <ul>
+                    <li>Conversion Rate Optimisation consultant, Web Analyst (1,5 years)
+                        <ul>
+                            <li>Dept Holding BV (Digital Agency)</li>
+                        </ul>
+                    </li>
+                    <li>Digital Marketing consultant (1 year)
+                        <ul>
+                            <li>Nibblr (startup)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li>Rotterdam University of Applied Sciences
+                        <ul>
+                            <li>Bachelor in Business Administration</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>Technology
+                        <ul>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </li>
+                    <li>Software
+                        <ul>
+                            <li>Optimizely</li>
+                            <li>BigQuery</li>
+                            <li>Google Analytics</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="code_examples">
+                <h2 class="section-title">Code examples</h2>
+                <i>Pushing custom even to Google Analytics through Google Optimize</i>
+                <pre>
+                   <code>
+                    clickableElement.addEventListener('click', ()=>{
+                        //GTM
+                        window.dataLayer = window.dataLayer ||[]; dataLayer.push({
+                           "event": "GOEvent",
+                           "eventCategory":"Google Optimize Custom",
+                            "eventAction":"optimizeTest - 'your event actiojn",
+                          "eventLabel": "your event label"
+                        }) })
+                   </code>
+                </pre>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>Russian - mother tongue</li>
+                    <li>English - C1 level</li>
+                    <li>Dutch - Intermediate</li>
+                </ul>
+            </section>
+            <section class="section" id="hobbies">
+                <h2 class="section-title">Hobbies</h2>
+                <ul>
+                    <li>Tennis</li>
+                    <li>Hip Hop (rap)</li>
+                    <li>Guitar</li>
+                    <li>Travelling</li>
+                </ul>
+            </section>
+            <section class="section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <ul>
+                    <li>Phone number: +31626327034</li>
+                    <li>Email: yakau_ratner@outlook.com</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-list">
+                <a class="link" href="https://github.com/danissimo29">Github link</a>
+                <a class="image-link" href="https://rs.school/js-stage0/">
+                    <img class="course-image" src="https://rs.school/images/rs_school_js.svg" alt="Course logo">
+                </a>
+                <p>2023</p>
             </div>
-        </header>
-        <!-- Main content -->
-        <main class="main">
-            <div class="container main-container">
-                <section class="section" id="summary">
-                    <h1 class="main-name-name">CV Yakov Ratner</h1>
-                    <h2 class="section-title">Summary</h2>
-                    <p>Hi, my name is Yakov. I am an aspiring digital professional with an experience in web experimentation and Conversion Rate Optimisation. I am aiming to bring my front-end skills to a new level and open the doors of possibilities.</p>
-                </section>
-                <section class="section" id="experience">
-                    <h2 class="section-title">Experience</h2>
-                    <ul>
-                        <li>Conversion Rate Optimisation consultant, Web Analyst (1,5 years)
-                            <ul>
-                                <li>Dept Holding BV (Digital Agency)</li>
-                            </ul>
-                        </li>
-                        <li>Digital Marketing consultant (1 year)
-                            <ul>
-                                <li>Nibblr (startup)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section" id="education">
-                    <h2 class="section-title">Education</h2>
-                    <ul>
-                        <li>Rotterdam University of Applied Sciences
-                            <ul>
-                                <li>Bachelor in Business Administration</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section" id="skills">
-                    <h2 class="section-title">Skills</h2>
-                    <ul>
-                        <li>Technology
-                            <ul>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>JavaScript</li>
-                                <li>SQL</li>
-                            </ul>
-                        </li>
-                        <li>Software
-                            <ul>
-                                <li>Optimizely</li>
-                                <li>BigQuery</li>
-                                <li>Google Analytics</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section" id="code_examples">
-                    <h2 class="section-title">Code examples</h2>
-                    <i>Pushing custom even to Google Analytics through Google Optimize</i>
-                </section>
-                <section class="section" id="languages">
-                    <h2 class="section-title">Languages</h2>
-                    <ul>
-                        <li>Russian - mother tongue</li>
-                        <li>English - C1 level</li>
-                        <li>Dutch - Intermediate</li>
-                    </ul>
-                </section>
-                <section class="section" id="hobbies">
-                    <h2 class="section-title">Hobbies</h2>
-                    <ul>
-                        <li>Tennis</li>
-                        <li>Hip Hop (rap)</li>
-                        <li>Guitar</li>
-                        <li>Travelling</li>
-                    </ul>
-                </section>
-                <section class="section" id="contact">
-                    <h2 class="section-title">Contact</h2>
-                    <ul>
-                        <li>Phone number: +31626327034</li>
-                        <li>Email: yakau_ratner@outlook.com</li>
-                    </ul>
-                </section>
-            </div>
-        </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-element-wrapper">
-                    <a href="https://github.com/danissimo29">Github link</a>
-                </div>
-                <div class="footer-element-wrapper">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="Course logo">
-                </div>
-                <div class="footer-element-wrapper">
-                    <p>2023</p>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
